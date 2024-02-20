@@ -1,82 +1,77 @@
-:root{
-
-    --color-h1: white;
-    --body-backgroud: #E5E5E5;
-    --body-before: #121214;
-    --color-p: #42D3FF;
-    --color-form: #FAFAFC;
-    --border-line: #E6E6F0;
+:root {
+  --color-h1: white;
+  --body-backgroud: #e5e5e5;
+  --body-before: #121214;
+  --color-p: #42d3ff;
+  --color-form: #fafafc;
+  --border-line: #e6e6f0;
 }
 
-
-body{
-    font-family: "Poppins", sans-serif;
-    /* color: var(--body-backgroud); */
-
+body {
+  font-family: "Poppins", sans-serif;
+  /* color: var(--body-backgroud); */
 }
 
-body::before{
-    content: '';
-    width: 100%;
-    height: 368px;
+body::before {
+  content: "";
+  width: 100%;
+  height: 368px;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: var(--body-before);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: var(--body-before);
 }
 
-
-.page{
-    width: 736px;
-    margin: auto;
+.page {
+  width: 736px;
+  margin: auto;
 }
 
-header{
-    width: 319px;
-   
-    margin-top: 74px;
+header {
+  width: 319px;
+
+  margin-top: 74px;
 }
 
-header h1{
-    font-family: "Archivo", sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    color: var(--color-h1);
+header h1 {
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--color-h1);
 }
 
+header p {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 26px;
 
-header p{
-    font-family: "Poppins";
-    font-size: 16px;
-    line-height: 26px;
-
-    color:var(--color-p);
+  color: var(--color-p);
 }
 
-form{
-    margin-top: 38px;
-    background: var(--color-form);
-    border-radius: 8px;
-    min-height: 300px;
+form {
+  margin-top: 38px;
+  background: var(--color-form);
+  border-radius: 8px;
+  min-height: 300px;
 
-    padding: 64px;
+  padding: 64px;
 }
 
 fieldset {
-    border: none;
+  border: none;
 }
 
-fieldset legend{
-    font-family: "Archivo",sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 34px;
+fieldset legend {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
 
-    width: 100%;
-    
-    border-bottom: 1px solid var(--border-line);
-    padding-bottom: 16px;
+  width: 100%;
+
+  border-bottom: 1px solid var(--border-line);
+  padding-bottom: 16px;
 }
