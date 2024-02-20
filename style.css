@@ -12,10 +12,11 @@
   --color-form: #fafafc;
   --border-line: #e6e6f0;
   --color-label: #4e4958;
-  --color-label-span: #c1bccc;
+  --color-label-span: #d0ced4;
   --input-wrapper-input-backgroud: #fafafc;
   --input-wrapper-input-border: #e6e6f0;
-  --input-wrapper-input-font: #C1BCCC;
+  --input-wrapper-input-font: #7a797c;
+  --input-wrapper-label-span-hover: #86848a;
 }
 
 body,
@@ -95,6 +96,18 @@ fieldset legend {
   border-bottom: 1px solid var(--border-line);
   padding-bottom: 16px;
 }
+
+.fieldset-wrapper{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-wrapper label span:hover{
+  color: var(--input-wrapper-label-span-hover)
+}
+
 .input-wrapper {
   display: flex;
   flex-direction: column;
@@ -116,7 +129,7 @@ fieldset legend {
   color: var(--color-label-span);
 }
 
-.input-wrapper input {
+.input-wrapper input, .input-wrapper textarea {
   background: var(--input-wrapper-input-backgroud);
 
   border: 1px solid var(--input-wrapper-input-border);
@@ -129,4 +142,9 @@ fieldset legend {
   line-height: 26px;
 
   color: var(--input-wrapper-input-font);
+}
+
+.input-wrapper textarea{
+  padding: 0;
+  height: 168px;
 }
