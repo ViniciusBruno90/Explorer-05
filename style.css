@@ -25,11 +25,15 @@ Colo no yokel e ele transforma em -- background-image: url("data:image/svg+xml,%
   --input-wrapper-input-border: #e6e6f0;
   --input-wrapper-input-font: #7a797c;
   --input-wrapper-label-span-hover: #86848a;
+  --footer-backgroud: #f0f0f4;
+  --footer-border-top: #d6d6d6;
+  --footer-button-hover: #08a04c;
+  --footer-button: #04d361;
+  --footer-button-font: #ffffff;
 }
 
 body,
 input,
-button,
 select,
 textarea {
   font-family: "Poppins", sans-serif;
@@ -83,7 +87,7 @@ header p {
 form {
   margin-top: 38px;
   background: var(--color-form);
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   min-height: 300px;
 
   padding: 64px;
@@ -202,7 +206,6 @@ fieldset legend {
   /* display: none; */
 
   opacity: 0;
-
 }
 
 .checkbox-wrapper input:checked + label::before {
@@ -211,9 +214,8 @@ fieldset legend {
   background-repeat: no-repeat;
 }
 
-.checkbox-wrapper input:focus + label::before{
-  outline: 2px solid  var(--body-before);
-
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid var(--body-before);
 }
 
 .checkbox-wrapper label {
@@ -232,4 +234,38 @@ fieldset legend {
 
   border: 1px solid var(--border-line);
   border-radius: 8px;
+}
+
+footer {
+  background: var(--footer-backgroud);
+  height: 136px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 64px;
+
+  margin-bottom: 100px;
+
+  border-top: 1px solid var(--footer-border-top);
+  border-radius: 0 0 8px 8px;
+}
+
+footer .button {
+  height: 56px;
+  background: var(--footer-button);
+  border: 0;
+  border-radius: 8px;
+
+  font-family: "Archivo";
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: var(--footer-button-font);
+}
+
+footer .button:hover {
+  background: var(--footer-button-hover);
 }
