@@ -25,11 +25,13 @@ Colo no yokel e ele transforma em -- background-image: url("data:image/svg+xml,%
   --input-wrapper-input-border: #e6e6f0;
   --input-wrapper-input-font: #7a797c;
   --input-wrapper-label-span-hover: #86848a;
+  --input-invalid: #FF1010;
   --footer-backgroud: #f0f0f4;
   --footer-border-top: #d6d6d6;
   --footer-button-hover: #08a04c;
   --footer-button: #04d361;
   --footer-button-font: #ffffff;
+
 }
 
 body,
@@ -268,4 +270,8 @@ footer .button {
 
 footer .button:hover {
   background: var(--footer-button-hover);
+}
+
+input:invalid{
+  border: 1px solid var(--input-invalid);
 }
